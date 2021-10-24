@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/db95d8e7ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="src/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <div class="search-form">
+          <label for="exampleInputCity1">Enter Your City</label>
+          <input
+            type="search"
+            class="form-control shadow-sm"
+            id="city-input"
+            autofocus="on"
+            autocomplete="off"
+            placeholder="Enter City Name"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <br />
+      <h1 id="city">Nottingham, Maryland</h1>
+      <h2 id="date"></h2>
+      <h3 class="temperature" id="temperature">
+        75°
+      </h3>
+      <img class="autumn" src="images/autumn3.png" />
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-2">Mon</div>
+        <div class="col-2">Tue</div>
+        <div class="col-2">Wed</div>
+        <div class="col-2">Thu</div>
+        <div class="col-2">Fri</div>
+        <div class="col-2">Sat</div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <img src="images/Fluency-Partly Cloudy Day.png" />
+          <p>79°|64°</p>
+        </div>
+        <div class="col-2">
+          <img src="images/Fluency-Stormy Weather.png" />
+          <p>77°|59°</p>
+        </div>
+        <div class="col-2">
+          <img src="images/Fluency-Smiling Sun.png" />
+          <p>90°|75°</p>
+        </div>
+        <div class="col-2">
+          <img src="images/Fluency-Windy Weather.png" />
+          <p>70°|60°</p>
+        </div>
+        <div class="col-2">
+          <img src="images/Fluency-Sun.png" />
+          <p>80°|73°</p>
+        </div>
+        <div class="col-2">
+          <img src="images/Fluency-Smiling Sun.png" />
+          <p>90°|75°</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
